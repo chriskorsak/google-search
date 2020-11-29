@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Image Search</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav>
+          <a href="index.html">Google Search</a>
+        </nav>
+        <main>
+          <!-- logo  -->
+          <img src="googlelogo_color_272x92dp.png" alt="Google" class="logo">
+          <!-- end logo -->
+          
+          <h2 id="logo-subtext">Images</h2>
+
+          <form action="https://google.com/search">
+              <input type="text" name="q">
+
+              <!-- used to return results from google images -->
+              <input type="hidden" name="tbm" value="isch">
+              <div class="form-buttons">
+                <input type="submit" value="Google Search">
+              </div>
+          </form>
+        </main>
+    </body>
+</html>
