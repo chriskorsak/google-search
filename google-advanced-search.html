@@ -14,17 +14,43 @@
         <div>
           <h1>Advanced Search</h1>
         </div>
+          
+        <div class="container">
+          <div class="col">
+            <h3>Find pages with...</h3>
 
-        <h3>Find pages with...</h3>
+            <p class="find">All these words:</p>
+            <p class="find">This exact word or phrase:</p>
+            <p class="find">Any of these words:</p>
+            <p class="find">None of these words:</p>
+          </div>
 
-        <form action="https://www.google.com/search" id="advanced-form">
-          <div class="advanced-form"><p class="form">All these words:</p> <input type="text" name="as_q" class="advanced-input"></div>
-          <div class="advanced-form"><p class="form">This exact word or phrase:</p> <input type="text" name="as_epq" class="advanced-input"></div>
-          <div class="advanced-form"><p class="form">Any of these words:</p> <input type="text" name="as_oq" class="advanced-input"></div>
-          <div class="advanced-form"><p class="form">None of these words:</p> <input type="text" name="as_eq" class="advanced-input"></div>
+          <div class="col">
+            <form action="https://www.google.com/search">
+              <p class="mobile-find">All these words:</p>
+              <input type="text" name="as_q" class="advanced-input">
+              <p class="mobile-find">This exact word or phrase:</p>
+              <input type="text" name="as_epq" class="advanced-input">
+              <p class="mobile-find">Any of these words:</p>
+              <input type="text" name="as_oq" class="advanced-input">
+              <p class="mobile-find">None of these words:</p>
+              <input type="text" name="as_eq" class="advanced-input">
+              <div class="right-align">
+                <input type="submit" class="blue" value="Advanced Search">
+              </div>
+            </form>
+          </div>
 
-          <input type="submit" class="blue" value="Advanced Search">
-        </form>
+          <div class="col" id="example-search">
+            <h3>To do this in the search box</h3>
+
+            <p>Type the important words: <span class="search">tricolor rat terrier</span></p>
+            <p>Put exact words in quotes: <span class="search">"rat terrier"</span></p>
+            <p>Type or between all the words you want: <span class="search">miniature or standard</span></p>
+            <p>Put a minus sign just before words you don't want: <span class="search">-rodent, -"Jack Russell"</span></p>
+          </div>
+
+        </div>
       </main>  
     </body>
 </html>
