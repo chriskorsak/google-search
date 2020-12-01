@@ -85,10 +85,13 @@ h3 {
   padding: 1em 0em;
 }
 
+div.subheading-advanced {
+  display: flex;
+}
+
 /* form styling */
 
 form {
-  /* 100% width only applies on screens smaller than 768px - see media query */
   width: 80%;
 }
 
@@ -163,22 +166,24 @@ span.search {
   font-size: .8em;
 }
 
-#example-search {
+#example-search,
+#find {
   display: none;
 }
 
 /* media query */
 
 @media (min-width: 768px) {
-  /* form {
+  form {
     max-width: 768px;
-  } */
+  }
 
   p.form {
     padding-bottom: 0em;
   }
 
-  #example-search {
+  #example-search,
+  #find {
     display: block;
   }
   p.mobile-find {
