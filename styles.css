@@ -48,8 +48,9 @@ main {
   padding: 0em 1em;
 }
 
-main.advanced {
-  display: flex;
+main.main-advanced {
+  display: block;
+  padding: 0em 2em;
   
 }
 
@@ -92,12 +93,10 @@ h3 {
 
 form {
   width: 100%;
-  /* border: 1px solid black; */
 }
 
 form.advanced {
   margin-top: 2.5em;
-  margin-right: 3em;
   width: 100%;
 }
 
@@ -116,7 +115,6 @@ input[type="text"] {
 input[type="text"].advanced-input {
   margin: 1em 0em;
   border-radius: 0px;
-  width: 100%;
 }
 
 input[type="text"]:hover {
@@ -155,12 +153,6 @@ input[type="submit"].blue:hover {
   justify-content: flex-end;
 }
 
-p.find {
-  min-width: 175px;
-  margin-bottom: 4em;
-  font-size: .9em;
-}
-
 .col {
   margin-right: 1em;
 }
@@ -189,7 +181,7 @@ span.search {
 
 /* media query */
 
-@media (min-width: 768px) {
+@media (min-width: 868px) {
   form {
     max-width: 768px;
   }
@@ -198,10 +190,28 @@ span.search {
     padding-bottom: 0em;
   }
 
-  #example-search,
   #find {
     display: block;
+    width: 175px;
+    flex-shrink: 0;
   }
+
+  #example-search {
+    display: block;
+    width: 350px;
+    flex-shrink: 0;
+  }
+
+  p.find {
+    margin-bottom: 55px;
+    font-size: .9em;
+  }
+  
+  p.example {
+    margin-bottom: 48px;
+    font-size: .9em;
+  }
+  
   p.mobile-find {
     display: none;
   }
