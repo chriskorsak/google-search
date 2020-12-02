@@ -32,6 +32,7 @@ nav > a {
   margin-left: 1em;
   color: rgb(0, 0, 0);
   text-decoration: none;
+  font-size: .9em;
 }
 
 nav > a:hover {
@@ -62,6 +63,7 @@ img.logo-small {
   padding: 1em 0em;
 }
 
+/* "Images" under logo on images page */
 #logo-subtext {
   color: #4285f4;
   position: relative;
@@ -71,7 +73,7 @@ img.logo-small {
 
 h1 {
   color: #ea4335;
-  padding: 2em 0em;
+  padding: 1.5em 0em;
   font-size: 1.5em;
   border-bottom: 1px solid rgb(225, 225, 225);
 }
@@ -85,14 +87,16 @@ h3 {
   padding: 1em 0em;
 }
 
-div.subheading-advanced {
-  display: flex;
-}
-
 /* form styling */
 
 form {
-  width: 80%;
+  width: 100%;
+  /* border: 1px solid black; */
+}
+
+form.advanced {
+  margin-top: 2.5em;
+  margin-right: 3em;
 }
 
 input {
@@ -108,8 +112,9 @@ input[type="text"] {
 }
 
 input[type="text"].advanced-input {
-  margin: 1em;
+  margin: 1em 0em;
   border-radius: 0px;
+  width: 100%;
 }
 
 input[type="text"]:hover {
@@ -128,11 +133,6 @@ input[type="submit"]:hover {
   border: 1px solid rgb(225, 225, 225);
 }
 
-div.right-align {
-  display: flex;
-  justify-content: flex-end;
-}
-
 input[type="submit"].blue {
   background-color: #0091fa;
   color: rgb(255, 255, 255);
@@ -148,9 +148,24 @@ input[type="submit"].blue:hover {
   justify-content: center;
 }
 
+.form-buttons-advanced {
+  display: flex;
+  justify-content: flex-end;
+}
+
 p.find {
-  min-width: 200px;
-  padding-bottom: .5em;
+  min-width: 175px;
+  margin-bottom: 4em;
+  font-size: .9em;
+}
+
+.col {
+  margin-right: 1em;
+  flex-shrink: 1;
+}
+
+#advanced-form-container {
+  flex-shrink: 2.5;
 }
 
 p.mobile-find {
