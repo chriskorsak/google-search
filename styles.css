@@ -28,7 +28,7 @@ nav.advanced {
 }
 
 nav > a {
-  padding: 1em 0em;
+  padding: 1.4em 0em;
   margin-left: 1em;
   color: rgb(0, 0, 0);
   text-decoration: none;
@@ -112,7 +112,6 @@ input[type="text"] {
 }
 
 input[type="text"].advanced-input {
-  margin: 1em 0em;
   border-radius: 0px;
 }
 
@@ -122,7 +121,8 @@ input[type="text"]:hover {
 
 input[type="submit"] {
   padding: .5em 1em;
-  margin: 0em .5em;
+  margin: 0em .5em .5em 0em;
+
   background-color: #f8f9fa;
   border: 1px solid #f8f9fa;
   border-radius: 3px;
@@ -179,7 +179,7 @@ span.search {
 
 @media (min-width: 768px) {
   form {
-    width: 768px;
+    width: 650px;
   }
 
   form.advanced {
@@ -195,6 +195,7 @@ span.search {
     display: block;
     width: 175px;
     flex-shrink: 0;
+    margin-right: .25em;
   }
 
   #example-search {
