@@ -49,7 +49,8 @@ main {
 }
 
 main.advanced {
-  display: block;
+  display: flex;
+  
 }
 
 img.logo {
@@ -97,6 +98,7 @@ form {
 form.advanced {
   margin-top: 2.5em;
   margin-right: 3em;
+  width: 100%;
 }
 
 input {
@@ -161,7 +163,6 @@ p.find {
 
 .col {
   margin-right: 1em;
-  flex-shrink: 1;
 }
 
 #advanced-form-container {
